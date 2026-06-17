@@ -34,6 +34,8 @@ public class SwaggerConfig {
                                                                 .name("Testimonial & Ask Admin")
                                                                 .email("webarya.info@gmail.com")))
                                 .servers(List.of(
+                                                new Server().url("https://blog.ithinklearn.com")
+                                                                .description("Production Server"),
                                                 new Server().url("http://93.127.194.118:9996")
                                                                 .description("VPS Direct Access"),
                                                 new Server().url("http://localhost:8080")
