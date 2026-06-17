@@ -6,9 +6,11 @@ services:
   # ==============================
   testimonial-qna-api:
     build: .
-    container_name: astar-testimonial-ask-api-container
+    container_name: ithinklearn-testimonial-ask-api-container
     ports:
-      - "9009:8080" # Host Port : Container Port
+      - "9996:8080" # Host Port : Container Port
+    networks:
+      - ithinklearn_net
     restart: always
     environment:
       # Server Configuration
@@ -49,3 +51,10 @@ services:
       interval: 30s
       timeout: 10s
       retries: 5
+
+networks:
+  ithinklearn_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.15.0.0/16

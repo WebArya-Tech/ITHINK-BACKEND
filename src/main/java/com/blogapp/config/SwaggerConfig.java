@@ -34,9 +34,7 @@ public class SwaggerConfig {
                                                                 .name("Testimonial & Ask Admin")
                                                                 .email("webarya.info@gmail.com")))
                                 .servers(List.of(
-                                                new Server().url("https://api.astarclasses.com")
-                                                                .description("Production Server"),
-                                                new Server().url("http://93.127.194.118:9014")
+                                                new Server().url("http://93.127.194.118:9996")
                                                                 .description("VPS Direct Access"),
                                                 new Server().url("http://localhost:8080")
                                                                 .description("Local Development")));
